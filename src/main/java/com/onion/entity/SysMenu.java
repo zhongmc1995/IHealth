@@ -10,29 +10,44 @@ import java.util.Date;
 
 /**
  * Created by lhd on 2017/5/4.
- * 角色基本信息
+ * 菜单
  */
-@TableName("sys_role")
-public class SysRole extends Model<SysRole>{
+@TableName("sys_menu")
+public class SysMenu extends Model<SysMenu>{
 
     /**
-     * 角色id标识
+     * 菜单唯一标识
      */
     @TableId(type = IdType.UUID)
     private String id;
 
     /**
-     * 角色名
+     * 父菜单id
      */
-    private String roleName;
+    private String pId;
 
     /**
-     * 角色类型
+     * 菜单名字
      */
-    private String roleType;
+    private String menuName;
 
     /**
-     *是否开启角色使用
+     * 菜单链接
+     */
+    private String href;
+
+    /**
+     * 菜单图标
+     */
+    private String icon;
+
+    /**
+     * 访问这个菜单需要的权限
+     */
+    private String permission;
+
+    /**
+     * 是否开启使用
      */
     private boolean useable;
 
@@ -64,23 +79,47 @@ public class SysRole extends Model<SysRole>{
         this.id = id;
     }
 
-    public String getRoleName() {
-        return roleName;
+    public String getpId() {
+        return pId;
     }
 
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
+    public void setpId(String pId) {
+        this.pId = pId;
     }
 
-    public String getRoleType() {
-        return roleType;
+    public String getMenuName() {
+        return menuName;
     }
 
-    public void setRoleType(String roleType) {
-        this.roleType = roleType;
+    public void setMenuName(String menuName) {
+        this.menuName = menuName;
     }
 
-    public boolean getUseable() {
+    public String getHref() {
+        return href;
+    }
+
+    public void setHref(String href) {
+        this.href = href;
+    }
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public void setIcon(String icon) {
+        this.icon = icon;
+    }
+
+    public String getPermission() {
+        return permission;
+    }
+
+    public void setPermission(String permission) {
+        this.permission = permission;
+    }
+
+    public boolean isUseable() {
         return useable;
     }
 
@@ -122,11 +161,14 @@ public class SysRole extends Model<SysRole>{
 
     @Override
     public String toString() {
-        return "SysRole{" +
+        return "SysMenu{" +
                 "id='" + id + '\'' +
-                ", roleName='" + roleName + '\'' +
-                ", roleType='" + roleType + '\'' +
-                ", useable='" + useable + '\'' +
+                ", pId='" + pId + '\'' +
+                ", menuName='" + menuName + '\'' +
+                ", href='" + href + '\'' +
+                ", icon='" + icon + '\'' +
+                ", permission='" + permission + '\'' +
+                ", useable=" + useable +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
                 ", createBy='" + createBy + '\'' +

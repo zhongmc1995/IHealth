@@ -14,8 +14,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Created by zhongmc on 2017/5/4.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"classpath:spring/applicationContext-dao.xml",
-        "classpath:spring/applicationContext-service.xml"})
+@ContextConfiguration({"classpath:config/spring/applicationContext-dao.xml",
+        "classpath:config/spring/applicationContext-service.xml"})
 public class UserTest {
 
     @Autowired SysUserServiceImpl sysUserService;
