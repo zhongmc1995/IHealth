@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * Created by zhongmc on 2017/5/4.
+ * 用户serivice实现类
  */
 @Service
 public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> implements ISysUserService {

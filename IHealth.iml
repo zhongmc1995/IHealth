@@ -28,6 +28,19 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources/config" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/doc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/doc/db" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/webapp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/webapp/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/webapp/WEB-INF" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/static" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/views" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/logs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources/mapper" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources/mybatis" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources/properties" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
