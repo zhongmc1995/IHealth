@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.baomidou:kisso:3.6.10">
     <CLASSES>
-      <root url="jar://H:/Repositories/Maven/com/baomidou/kisso/3.6.10/kisso-3.6.10.jar!/" />
+      <root url="jar://E:/Repositories/Maven/com/baomidou/kisso/3.6.10/kisso-3.6.10.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://H:/Repositories/Maven/com/baomidou/kisso/3.6.10/kisso-3.6.10-javadoc.jar!/" />
+      <root url="jar://E:/Repositories/Maven/com/baomidou/kisso/3.6.10/kisso-3.6.10-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://H:/Repositories/Maven/com/baomidou/kisso/3.6.10/kisso-3.6.10-sources.jar!/" />
+      <root url="jar://E:/Repositories/Maven/com/baomidou/kisso/3.6.10/kisso-3.6.10-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
