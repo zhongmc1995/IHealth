@@ -9,52 +9,47 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * Created by zhongmc on 2017/5/4.
- * 系统用户
+ * Created by lhd on 2017/5/4.
+ * 菜单
  */
-@TableName("sys_user")
-public class SysUser extends Model<SysUser> {
+@TableName("sys_menu")
+public class SysMenu extends Model<SysMenu>{
 
     /**
-     * id标识
+     * 菜单唯一标识
      */
-    @TableId(type= IdType.UUID)
+    @TableId(type = IdType.UUID)
     private String id;
 
     /**
-     * 用户名
+     * 父菜单id
      */
-    private String username;
+    private String pId;
 
     /**
-     * 密码
+     * 菜单名字
      */
-    private String password;
+    private String menuName;
 
     /**
-     * 用户描述
+     * 菜单链接
      */
-    private String desc;
+    private String href;
 
     /**
-     * 用户邮箱
-     */
-    private String email;
-
-    /**
-     * 用户头像
+     * 菜单图标
      */
     private String icon;
 
     /**
-     * 地址
+     * 访问这个菜单需要的权限
      */
-    private Address address;
+    private String permission;
 
     /**
-     * 简介
+     * 是否开启使用
      */
-    private String introduce;
+    private boolean useable;
 
     /**
      * 创建时间
@@ -84,36 +79,28 @@ public class SysUser extends Model<SysUser> {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getpId() {
+        return pId;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setpId(String pId) {
+        this.pId = pId;
     }
 
-    public String getPassword() {
-        return password;
+    public String getMenuName() {
+        return menuName;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setMenuName(String menuName) {
+        this.menuName = menuName;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getHref() {
+        return href;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setHref(String href) {
+        this.href = href;
     }
 
     public String getIcon() {
@@ -124,20 +111,20 @@ public class SysUser extends Model<SysUser> {
         this.icon = icon;
     }
 
-    public Address getAddress() {
-        return address;
+    public String getPermission() {
+        return permission;
     }
 
-    public void setAddress(Address address) {
-        this.address = address;
+    public void setPermission(String permission) {
+        this.permission = permission;
     }
 
-    public String getIntroduce() {
-        return introduce;
+    public boolean isUseable() {
+        return useable;
     }
 
-    public void setIntroduce(String introduce) {
-        this.introduce = introduce;
+    public void setUseable(boolean useable) {
+        this.useable = useable;
     }
 
     public Date getCreateTime() {
@@ -174,15 +161,14 @@ public class SysUser extends Model<SysUser> {
 
     @Override
     public String toString() {
-        return "SysUser{" +
+        return "SysMenu{" +
                 "id='" + id + '\'' +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", desc='" + desc + '\'' +
-                ", email='" + email + '\'' +
+                ", pId='" + pId + '\'' +
+                ", menuName='" + menuName + '\'' +
+                ", href='" + href + '\'' +
                 ", icon='" + icon + '\'' +
-                ", address=" + address +
-                ", introduce='" + introduce + '\'' +
+                ", permission='" + permission + '\'' +
+                ", useable=" + useable +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
                 ", createBy='" + createBy + '\'' +
