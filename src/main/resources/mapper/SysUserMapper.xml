@@ -2,6 +2,27 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.onion.mapper.SysUserMapper">
 
+    <!-- 映射 -->
+    <resultMap id="BaseUserMapper" type="com.onion.entity.SysUser">
+        <id property="id" column="id"/>
+        <result property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+        <result property="desc" column="desc"/>
+        <result property="email" column="email"/>
+        <result property="icon" column="icon"/>
+        <result typeHandler="com.onion.entity.handler.AddressHandler" property="address" column="address"/>
+        <result property="introduce" column="introduce"/>
+        <result property="updateTime" column="updateTime"/>
+        <result property="createTime" column="createTime"/>
+        <result property="updateBy" column="updateBy"/>
+        <result property="createBy" column="createBy"/>
+    </resultMap>
 
+    <select id="selectUserByUsername" resultMap="BaseUserMapper" parameterType="java.lang.String">
+        SELECT u.*
+        FROM sys_user u
+        WHERE username = #{username}
+    </select>
 
 </mapper>

@@ -33,7 +33,7 @@
     <servlet-mapping>
         <servlet-name>springServlet</servlet-name>
         <!--默认匹配所有请求-->
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
     <!-- 编码过滤器 -->

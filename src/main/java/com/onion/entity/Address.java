@@ -37,6 +37,18 @@ public class Address {
      */
     private String postCode;
 
+    public Address(String param){
+        String str[] = param.split("-");
+        this.country = str[0];
+        this.province = str[1];
+        this.city = str[2];
+        this.street = str[3];
+    }
+
+    public String getStringAsPhone(){
+        return country+"-"+province+"-"+city+"-"+street;
+    }
+
     public String getId() {
         return id;
     }
@@ -96,4 +108,6 @@ public class Address {
                 ", postCode='" + postCode + '\'' +
                 '}';
     }
+
+
 }
